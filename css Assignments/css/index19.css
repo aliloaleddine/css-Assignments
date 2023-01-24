@@ -1,0 +1,25 @@
+.e1 div[class="main red"]{
+    color: red;
+}
+.e2 .parent>.child:last-child{
+    color: red;
+}
+.e3 .parent+.parent .baby:first-child{
+    color: red;
+}
+ .e4 p~div[title]:not(.parent div):not(.no-need){
+    color: red;
+}
+
+.e5>div:nth-child(2) div[title='Elzero']{
+    color: red;
+}
+.e6>div:not(div[class="no-need"]) div:nth-last-of-type(2){
+    color: red;
+}
+.e7>div:first-child div:nth-of-type(2){
+    color: red;
+}
+.e8 div :not(h3):not(:first-child):not(:last-child){
+color: red;
+}

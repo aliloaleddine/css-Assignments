@@ -1,0 +1,233 @@
+/* التكليف 1*/
+.e1 {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	background-color: #eee;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	box-shadow: 5px -1px 1px 1px salmon, -8px -1px 1px 1px steelblue;
+	color: salmon;
+}
+
+/* التكليف 2*/
+.e2 .parent {
+	width: 600px;
+	height: 300px;
+	background-color: #eee;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	text-align: center;
+	color: white;
+	padding: 10px 0px;
+	margin: 20px auto;
+}
+
+.e2 .parent div {
+	width: calc((100% - 6*2px)/3);
+
+	background-color: red;
+}
+
+/* التكليف 3*/
+.e3 .parent {
+	width: 600px;
+	height: 300px;
+	background-color: #eee;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 20px auto;
+}
+
+.e3 .parent div {
+	background-color: blueviolet;
+	color: white;
+	width: calc((100% - 6*3px)/3);
+}
+
+.e3 .parent .one {
+	order: 4;
+	align-self: flex-end;
+	height: 30px;
+}
+
+.e3 .parent .two {
+	order: 5;
+}
+
+.e3 .parent .three {
+	order: 2;
+	align-self: start;
+	height: 30px;
+}
+
+.e3 .parent .four {
+	order: 1;
+}
+
+.e3 .parent .five {
+	order: 6;
+}
+
+.e3 .parent .six {
+	order: 3;
+}
+
+/* النكليف 4*/
+.e4 .parent {
+	width: 600px;
+	height: 300px;
+	background-color: #eee;
+	margin: 30px auto;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	text-align: center;
+}
+
+.e4 .parent div {
+	background-color: darkgreen;
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.e4 .parent .two {
+	width: 294px;
+}
+
+.e4 .parent .one {
+	align-self: flex-end;
+	width: 50px;
+}
+
+.e4 .parent .three {
+	align-self: flex-end;
+	width: 50px;
+}
+
+/*التكليف 5*/
+.e5 .parent {
+	width: 600px;
+	height: 300px;
+	margin: 30px auto;
+	background-color: #eee;
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.e5 .parent div {
+	width: calc((100% - 6*12px)/4);
+}
+
+.e5 .parent .one {
+	background-color: blueviolet;
+	align-self: flex-end;
+	height: 50%;
+}
+
+.e5 .parent .two {
+	background-color: orange;
+	align-self: flex-start;
+	height: 50%;
+}
+
+.e5 .parent .three {
+	align-self: flex-end;
+	background-color: forestgreen;
+	height: 50%;
+}
+
+.e5 .parent .four {
+	align-self: flex-start;
+	background-color: saddlebrown;
+	height: 50%;
+}
+
+/*تكليف 6*/
+.e6 {
+	--color: #eee;
+}
+
+.e6 .page {
+	width: 600px;
+	height: 300px;
+	margin: 30px auto;
+	background-color: #eeeeee4a;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.e6 .page .header {
+	display: flex;
+	width: 100%;
+	height: 10%;
+	justify-content: space-between;
+}
+
+.e6 .page .header .logo {
+	background-color: var(--color);
+	width: 10%;
+	text-align: center;
+	line-height: 25px;
+}
+
+.e6 .page .header ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	background-color: var(--color);
+	width: 85%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.e6 .page .header ul li {
+	margin: 0 5px;
+}
+
+.e6 .page .main-area {
+	display: flex;
+	width: 100%;
+	height: 70%;
+	justify-content: space-between;
+}
+
+.e6 .page .main-area .content {
+	width: 65%;
+	background-color: var(--color);
+}
+
+.e6 .page .main-area .sidebar {
+	background-color: var(--color);
+	width: 30%;
+}
+
+.e6 .page .footer {
+	display: flex;
+	width: 100%;
+	height: 10%;
+	justify-content: space-between;
+	padding: 5px;
+	background-color: #eee;
+}

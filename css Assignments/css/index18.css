@@ -1,0 +1,197 @@
+.parent {
+	width: 500px;
+	height: 200px;
+	background-color: #ddd;
+	display: grid;
+	grid-template-columns: repeat(7, 20px);
+	grid-template-rows: repeat(5, 20px);
+}
+
+.parent .one {
+	background-color: black;
+	grid-area: 2/1/5/2;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+@keyframes mov1 {
+
+	5% {
+
+		transform: translate(-45px, 0px);
+		-webkit-transform: translate(-45px, 0px);
+		-moz-transform: translate(-45px, 0px);
+		-ms-transform: translate(-45px, 0px);
+		-o-transform: translate(-45px, 0px);
+	}
+
+	10% {
+		transform: translate(-45px, -80px);
+		-webkit-transform: translate(-45px, -80px);
+		-moz-transform: translate(-45px, -80px);
+		-ms-transform: translate(-45px, -80px);
+		-o-transform: translate(-45px, -80px);
+	}
+
+	50% {
+		opacity: 0;
+		transform: translate(-45px, -80px);
+		-webkit-transform: translate(-45px, -80px);
+		-moz-transform: translate(-45px, -80px);
+		-ms-transform: translate(-45px, -80px);
+		-o-transform: translate(-45px, -80px);
+	}
+
+	99% {
+
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+
+	}
+
+
+
+
+}
+
+@keyframes mov2 {
+	50% {
+		transform: translate(0px, 0px);
+		-webkit-transform: translate(0px, 0px);
+		-moz-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		-o-transform: translate(0px, 0px);
+	}
+
+	55.44% {
+		transform: translate(-45px, 0px);
+		-webkit-transform: translate(-45px, 0px);
+		-moz-transform: translate(-45px, 0px);
+		-ms-transform: translate(-45px, 0px);
+		-o-transform: translate(-45px, 0px);
+	}
+
+	60.88% {
+		transform: translate(-45px, 40px);
+		-webkit-transform: translate(-45px, 40px);
+		-moz-transform: translate(-45px, 40px);
+		-ms-transform: translate(-45px, 40px);
+		-o-transform: translate(-45px, 40px);
+	}
+
+	66.33% {
+		transform: translate(0px, 40px);
+		-webkit-transform: translate(0px, 40px);
+		-moz-transform: translate(0px, 40px);
+		-ms-transform: translate(0px, 40px);
+		-o-transform: translate(0px, 40px);
+	}
+
+	71.77% {
+		transform: translate(-45px, 40px);
+		-webkit-transform: translate(-45px, 40px);
+		-moz-transform: translate(-45px, 40px);
+		-ms-transform: translate(-45px, 40px);
+		-o-transform: translate(-45px, 40px);
+	}
+
+	77.22% {
+		transform: translate(-45px, 80px);
+		-webkit-transform: translate(-45px, 80px);
+		-moz-transform: translate(-45px, 80px);
+		-ms-transform: translate(-45px, 80px);
+		-o-transform: translate(-45px, 80px);
+	}
+
+	82.66% {
+		transform: translate(0px, 80px);
+		-webkit-transform: translate(0px, 80px);
+		-moz-transform: translate(0px, 80px);
+		-ms-transform: translate(0px, 80px);
+		-o-transform: translate(0px, 80px);
+	}
+
+	88.11% {
+		transform: translate(-45px, 80px);
+		-webkit-transform: translate(-45px, 80px);
+		-moz-transform: translate(-45px, 80px);
+		-ms-transform: translate(-45px, 80px);
+		-o-transform: translate(-45px, 80px);
+	}
+
+	93.55% {
+		transform: translate(-45px, 0px);
+		-webkit-transform: translate(-45px, 0px);
+		-moz-transform: translate(-45px, 0px);
+		-ms-transform: translate(-45px, 0px);
+		-o-transform: translate(-45px, 0px);
+	}
+
+	99% {
+		transform: translate(0px, 0px);
+		-webkit-transform: translate(0px, 0px);
+		-moz-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		-o-transform: translate(0px, 0px);
+	}
+}
+
+
+
+.parent .two {
+	background-color: black;
+	grid-area: 1/1/2/4;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.parent .three {
+	background-color: black;
+	grid-area: 3/2/4/4;
+}
+
+.parent .four {
+	grid-area: 5/1/6/4;
+	background-color: black;
+}
+
+.parent .two::before {
+	content: "";
+	background-color: orange;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	animation: mov2 10s linear 0s infinite normal;
+	-webkit-animation: mov2 10s linear 0s infinite normal;
+}
+
+.parent .five {
+	background-color: black;
+	grid-area: 1/5/6/6;
+}
+
+.parent .six {
+	background-color: black;
+	grid-area: 5/6/6/8;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.parent .six::before {
+	content: "";
+	background-color: orange;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	animation-name: mov1;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: normal;
+}

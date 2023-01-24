@@ -1,0 +1,155 @@
+.e1 {
+	margin-bottom: 200px;
+}
+
+.e1 div {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+.green {
+	background-color: teal;
+	z-index: 3;
+	top: 30px;
+	left: 30px;
+}
+
+.red {
+	background-color: red;
+	z-index: 4;
+	top: 35px;
+	left: 35px;
+}
+
+.blue {
+	background-color: deepskyblue;
+	top: 20px;
+	left: 20px;
+	z-index: 2;
+}
+
+.black {
+	background-color: black;
+	z-index: 1;
+	top: 30px;
+	left: 20px;
+}
+
+.e2 {
+	width: 400px;
+	margin: auto;
+	background-color: #eee;
+	border-style: solid;
+	border-width: 4px;
+	border-color: red dodgerblue;
+	position: relative;
+	padding: 30px;
+}
+
+.e2 span {
+	color: white;
+	position: absolute;
+	background-color: dodgerblue;
+	width: 30px;
+	height: 30px;
+}
+
+.top-left,
+.bottom-left {
+	border-right: 2px solid red;
+}
+
+.top-right,
+.bottom-right {
+	border-left: 2px solid red;
+}
+
+.top-left {
+	top: -20px;
+	left: -20px;
+}
+
+.bottom-left {
+	bottom: -20px;
+	left: -20px;
+}
+
+.bottom-right {
+	bottom: -20px;
+	right: -20px;
+}
+
+.top-right {
+	top: -20px;
+	right: -20px;
+}
+
+.e3 {
+	width: 500px;
+	margin: 30px auto;
+}
+
+ul {
+	padding: 0;
+}
+
+.e3>li {
+	background-color: #eee;
+	margin-bottom: 20px;
+	list-style: none;
+	padding: 10px;
+}
+
+ol li,
+.e3 ul li {
+	background-color: white;
+	margin: 20px 0px;
+}
+
+.e3 ul {
+	list-style-position: inside;
+}
+
+table {
+	width: 700px;
+	border-bottom: 3px solid teal;
+}
+
+td,
+th {
+	width: calc(100% / 5);
+	padding: 10px 0px;
+	background-color: #eee;
+	text-align: center;
+}
+
+th {
+	background-color: black;
+	color: white;
+}
+
+img {
+	width: 80%;
+	display: block;
+}
+
+.v {
+	background-color: dodgerblue;
+	color: white;
+	padding: 5px 12px;
+	cursor: pointer;
+}
+
+.d {
+	background-color: red;
+	color: white;
+	padding: 5px 12px;
+	cursor: pointer;
+}
+
+h3 {
+	width: 700px;
+	text-align: center;
+
+}

@@ -1,0 +1,59 @@
+.con {
+    background-color: lawngreen;
+    width: 1000px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+    height: 400px;
+}
+
+.con div {
+    margin-top: 15px;
+    background-color: magenta;
+    padding: calc((400px - 174px)/8) 0px;
+}
+
+.con .d1-1 {
+    float: left;
+    width: calc((100% - 2*15px));
+    margin-left: 15px;
+}
+
+.con .d1-3 {
+    float: left;
+    width: calc((100% - 4*15px)/3);
+    margin-left: 15px;
+}
+
+.con .d1-2 {
+    float: left;
+    width: calc((100% - 3*15px)/2);
+    margin-left: 15px;
+}
+
+.con .d1-4 {
+    float: left;
+    width: calc((100% - 5*15px)/4);
+    margin-left: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+.con1 div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: red;
+    /* Get The Background From Image */
+}
+
+.con1 .one {
+    background-color: rgb(255 0 0 /10%);
+}
+
+.con1 .two {
+    opacity: 0.1;
+}

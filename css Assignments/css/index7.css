@@ -1,0 +1,87 @@
+.e1 div {
+	background-color: #eee;
+	width: 300px;
+	height: 60px;
+	margin: 30px auto;
+	text-align: center;
+	padding-top: 40px;
+}
+
+div:empty {
+	background-color: red;
+}
+
+.e2 div {
+	background-color: #eee;
+	width: 500px;
+	margin: 30px auto;
+	text-align: center;
+	padding: 40px 0px;
+	font-size: 25px;
+}
+
+.e2 div::first-letter {
+	background-color: red;
+	color: white;
+	width: 30px;
+	font-size: 50px;
+	font-weight: bold;
+	padding: 21px;
+	margin-left: -77px;
+	margin-right: 20px;
+}
+
+.e3 p {
+	position: relative;
+	background-color: #eee;
+	width: 400px;
+	height: 50px;
+	margin: 20px auto;
+	padding-top: 30px;
+	border-left: 8px solid red;
+	text-align: center;
+}
+
+.e3 p::after {
+	content: " ";
+	border: 18px solid red;
+	border-color: transparent red transparent transparent;
+	position: absolute;
+	left: -44px;
+	top: 27%;
+}
+
+.e3 p::before {
+	content: attr(data-person);
+	position: absolute;
+	background-color: #708090ba;
+	width: 98px;
+	height: 40px;
+	left: -134px;
+	padding-top: 20px;
+	top: 10px;
+}
+
+.e4 p {
+	text-align: center;
+	width: 80%;
+	background-color: #eee;
+	padding: 40px 0px;
+	counter-increment: conter;
+	position: relative;
+	border-right: 8px solid red;
+
+}
+
+.e4 p::before {
+	content: counter(conter);
+	background-color: red;
+	height: 80%;
+	width: 122px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: white;
+	font-size: 50px;
+	padding-top: 18px;
+}

@@ -1,0 +1,105 @@
+/* التكليف 1*/
+.e1 {
+	margin: 30px auto;
+	height: 200px;
+	background-color: teal;
+}
+
+.e1 div {
+	background-color: yellow;
+	width: 30px;
+	height: 30px;
+}
+
+.e1 .parent {
+	width: 100%;
+	height: 100px;
+	background-color: brown;
+	position: relative;
+}
+.center-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.center-position {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+.circle-100 {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.circle-200 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.e2 div {
+	background-color: #ddd;
+	height: 50px;
+	margin: 50px;
+	position: relative;
+	padding: 5px;
+}
+
+.arrow::before {
+	content: "";
+	border-style: solid;
+	border-width: 10px;
+	border-color: transparent transparent #ddd transparent;
+	position: absolute;
+}
+
+.top::before {
+	top: -20px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+}
+
+.right::before {
+	top: 50%;
+	right: -20px;
+	transform: translate(0%, -50%) rotate(90deg);
+	-webkit-transform: translate(0%, -50%) rotate(90deg);
+	-moz-transform: translate(0%, -50%) rotate(90deg);
+	-ms-transform: translate(0%, -50%) rotate(90deg);
+	-o-transform: translate(0%, -50%) rotate(90deg);
+}
+.bottom::before {
+	bottom: -20px;
+	left: 50%;
+	transform: translate(-50%, 0%) rotate(180deg);
+	-webkit-transform: translate(-50%, 0%) rotate(180deg);
+	-moz-transform: translate(-50%, 0%) rotate(180deg);
+	-ms-transform: translate(-50%, 0%) rotate(180deg);
+	-o-transform: translate(-50%, 0%) rotate(180deg);
+}
+.left::before {
+	top: 50%;
+	left: -20px;
+	transform: translate(0%, -50%) rotate(270deg);
+	-webkit-transform: translate(0%, -50%) rotate(270deg);
+	-moz-transform: translate(0%, -50%) rotate(270deg);
+	-ms-transform: translate(0%, -50%) rotate(270deg);
+	-o-transform: translate(0%, -50%) rotate(270deg);
+}

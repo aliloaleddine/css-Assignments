@@ -1,0 +1,23 @@
+.title,
+p {
+    color: green;
+}
+
+.parent .title {
+    color: blue;
+}
+
+.child .title {
+    color: red;
+}
+
+.exo2 div {
+    max-width: 400px;
+    width: fit-content;
+    max-height: 20px;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+}

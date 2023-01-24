@@ -1,0 +1,51 @@
+.sahmp {
+    display: inline-block;
+    padding: 20px;
+    border-width: 5px;
+    border-style: solid;
+    outline: 5px solid black;
+    margin: 5px;
+    background-color: #eee;
+}
+
+.s1 {
+    border-color: red;
+}
+
+.s2 {
+    border-color: blue green;
+}
+
+.s3 {
+    border-color: red green blue yellow;
+    border-style: dashed;
+}
+
+.div {
+    width: 400px;
+    background-color: #eee;
+    margin: 20px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+span {
+    padding: 6px;
+}
+
+.s4 {
+    border-left: 5px solid red;
+}
+
+.s5 {
+    border-left: 5px solid blue;
+}
+
+.s6 {
+    border-left: 5px solid green;
+}
+
+.s55 {
+    visibility: hidden;
+}

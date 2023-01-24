@@ -1,0 +1,38 @@
+.grnd-parent {
+	height: 253px;
+	background-color: teal;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.grnd-parent:only-child {
+
+	flex-shrink: 0;
+}
+
+.parent {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 10;
+
+}
+
+header,
+footer {
+	background-color: cornflowerblue;
+	flex-grow: 1;
+
+}
+
+nav,
+aside {
+	background-color: blueviolet;
+	flex-grow: 1;
+}
+
+section {
+	background-color: burlywood;
+	flex-grow: 4;
+
+}

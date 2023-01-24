@@ -1,0 +1,39 @@
+html {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+div {
+    border: 5px solid red;
+    padding: 50px;
+}
+
+p {
+    border: inherit;
+    padding: inherit;
+    background-color: #EEE;
+}
+
+span {
+    display: block;
+}
+
+.w1 {
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.w2 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.w3 {
+    font-family: 'Jomhuria', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,78 @@
+.e1 div {
+	width: 600px;
+	background-color: #eee;
+	border-color: transparent slateblue transparent red;
+	border-style: solid;
+	border-width: 5px;
+	position: relative;
+	text-align: center;
+	padding: 20px;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 30px auto;
+}
+
+.e1 div::first-letter {
+	color: red;
+}
+
+.e1 div::before {
+	content: "";
+	background-image: linear-gradient(to right,
+			red 20%,
+			deepskyblue 20%,
+			deepskyblue 40%,
+			green 40%,
+			green 60%,
+			orangered 60%,
+			orangered 80%,
+			slateblue 80%);
+	width: 101.6%;
+	height: 5px;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+}
+
+.e1 div::after {
+	content: "";
+	background-image: linear-gradient(to right,
+			red 20%,
+			deepskyblue 20%,
+			deepskyblue 40%,
+			green 40%,
+			green 60%,
+			orangered 60%,
+			orangered 80%,
+			slateblue 80%);
+	width: 101.6%;
+	height: 5px;
+	position: absolute;
+	top: 100%;
+	left: -5px;
+}
+
+.e2 div {
+	width: 600px;
+	margin: 20px auto;
+	position: relative;
+
+}
+
+.e2 div input {
+	width: 600px;
+	padding: 20px;
+	caret-color: red;
+}
+
+.e2 div::after {
+	content: "";
+	background-image: linear-gradient(to right,
+			red 50%,
+			green 50%);
+	width: 107.4%;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+
+}

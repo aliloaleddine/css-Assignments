@@ -1,0 +1,40 @@
+span {
+    text-shadow: 1.8px 1.5px blueviolet, 1.2px 1px #2196f3, 0.6px 0.5px red;
+}
+
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}
+
+div {
+    background-color: #EEE;
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 20PX;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+a {
+    margin: auto;
+    text-transform: capitalize;
+    width: 80px;
+    padding: 20px;
+    background-color: rgb(0, 150, 136);
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    border-bottom: 10px solid rgb(0, 81, 74);
+
+}
